@@ -7,7 +7,7 @@ class AuthController{
         $modelLogin = new Auth();
         $rta = $modelLogin->login($username, $password);
         if ($rta == "2") {
-            $contenido = "Location: ./views/dashboard.php";
+            $contenido = "Location: ./../views/dashboard.php";
             require "./views/home.php";
         }
     }
