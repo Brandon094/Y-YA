@@ -1,3 +1,7 @@
+<?php 
+    $contenido = "./views/dashboard.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
