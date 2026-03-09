@@ -1,5 +1,5 @@
 /* CONTENEDOR */
 .container {
     display: flex;
-    height: calc(100vh - 60%);
+    height: 100vh;
 }
