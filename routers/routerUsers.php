@@ -1,11 +1,12 @@
 <?php
-include "./../view/RegistroUsuarios.php";
+include "./../views/RegistroUsuarios.php";
 
 $var = new AuthController();
 
 switch ($_REQUEST["X"]) {
     case '1': // Registro de usuario
-        include("./../view/RegistroUsuarios.php");
+        include("./../views/RegistroUsuarios.php");
+        require $contenido = "./../views/RegistroUsuarios.php";
         break;
     case '2': // Reporte
         # code ...
