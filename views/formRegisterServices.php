@@ -3,26 +3,26 @@
 
 <div class="content">
     <div class="title-info">
-        <h5>Registra un nuevo usuario en YÁYA</h5>
-        <p>Formulario de Registro</p>
+        <h5>Registra un nuevo servicio en YÁYA</h5>
+        <p>Formulario de registro para los servicios que va a ofertar</p>
     </div>
-    <!-- usuario -->
+    <!-- servicio -->
     <div class="form-register">
-        <form method="POST" action="/security/validacionRgistroUsuario.php">
+        <form method="POST" action="/security/validacionRgistroServicio.php">
             <div class="infoUser">
                 <!-- Información del usuario -->
-                <h3>Información del Usuario</h3>
+                <h3>Información del Servicio</h3>
                 <div class="input-label">
-                    <label for="nombreUsuario">Nombre de usuario:</label>
+                    <label for="nombreServicio">Nombre del servicio:</label>
                 </div>
                 <div class="input-label">
-                    <input name="nombreUsuario" type="text" value="" placeholder="Ingresar Nombre" required>
+                    <input name="nombreServicio" type="text" value="" placeholder="Ingresar nombre del servicio" required>
                 </div>
                 <div class="input-label">
-                    <label for="apellido">Apellidos:</label>
+                    <label for="categoria">Categoria:</label>
                 </div>
                 <div class="input-label">
-                    <input name="apellido" type="text" value="" placeholder="Ingresar Apellidos" required>
+                    <input name="categoria" type="text" value="" placeholder="Ingresar categoria" required>
                 </div>
                 <div class="input-label">
                     <label for="numeroCedula">Número de Cédula:</label>
@@ -45,21 +45,15 @@
                 <!-- rol -->
                 <div class="input-label">
                     <label for="rol">Rol:</label>
-                </div>
-                <div class="input-label">
                     <input name="rol" type="text" value="" placeholder="seleccione rol" required>
                 </div>
                 <!-- credenciales -->
                 <div class="input-label">
                     <label for="email">Email:</label>
-                </div>
-                <div class="input-label">
                     <input name="email" type="email" value="" placeholder="ingrese email" required>
                 </div>
                 <div class="input-label">
                     <label for="contraseña">Contraseña:</label>
-                </div>
-                <div class="input-label">
                     <input name="contraseña" type="password" value="" placeholder="ingrese Contraseña" required>
                 </div>
 
@@ -72,16 +66,12 @@
                 </div>
                 <div class="input-label">
                     <label for="email_contacto">Email de contacto:</label>
-                </div>
-                <div class="input-label">
                     <input name="email_contacto" type="email" value="" placeholder="ingrese email de contacto" required>
                 </div>
 
                 <!-- Direcion -->
                 <div class="input-label">
                     <label for="direccion">Dirección:</label>
-                </div>
-                <div class="input-label">
                     <input name="direccion" type="text" value="" placeholder="ingrese direccion" required>
                 </div>
             </div>

@@ -8,13 +8,18 @@ $x = $_REQUEST['X'] ?? null;
 switch ($x) {
     case '1':
         $contenido = "./../views/formRegisterUsers.php";
+        // Incluye la vista principal que contiene el navbar, sidebar y el área de contenido dinámico
+        require_once(__DIR__ . '/../views/home.php');
         break;
     case '2':
-        $contenido = "./../views/dashboard.php";
+        $contenido = "./../views/formRegisterServices.php";
+        require_once(__DIR__ . '/../views/home.php');
+        break;
+    case '3':
+        include "./../views/formRegisterUsers.php";
         break;
     default:
         $contenido = "./../views/dashboard.php";
+        require_once(__DIR__ . '/../views/home.php');
         break;
 }
-// Incluye la vista principal que contiene el navbar, sidebar y el área de contenido dinámico
-require_once(__DIR__ . '/../views/home.php');
