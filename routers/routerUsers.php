@@ -16,10 +16,11 @@ switch ($x) {
         require_once(__DIR__ . '/../views/home.php');
         break;
     case '3':
-        include "./../views/formRegisterUsers.php";
+        $contenido = "./../views/config.php";
+        require_once(__DIR__ . '/../views/home.php');
         break;
     default:
         $contenido = "./../views/dashboard.php";
-        require_once(__DIR__ . '/../views/home.php');
+        //require_once(__DIR__ . '/../views/home.php');
         break;
 }
