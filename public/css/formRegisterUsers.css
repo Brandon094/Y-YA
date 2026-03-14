@@ -6,9 +6,13 @@
     text-align: center;
 }
 
-.title-info p{
+.title-info p {
     font-size: 1.2rem;
     color: #666;
+}
+
+h3 {
+    margin: 20px;
 }
 
 .form-register {
@@ -26,7 +30,7 @@
     font-weight: bold;
 }
 
-.form-register input{
+.form-register input {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -34,18 +38,40 @@
     border-radius: 4px;
 }
 
-.infoUser, .infoUserSec {
+.infoUser,
+.infoUserSec {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
 }
 
-.input-label{
-    display:flex;
+.infoUser {
+    margin-bottom: 100%;
+}
+
+.input-label {
+    display: flex;
 }
 
 .contentButton {
     display: flex;
     justify-content: center;
+}
+
+.contentButton input {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contentButton input:hover {
+    background-color: #0056b3;
+}
+
+#descripcion {
+    width: 100%;
+    height: 100px;
 }
