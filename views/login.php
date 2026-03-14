@@ -34,12 +34,15 @@
                 <label for="password">Ingrese su contraseña:</label>
             </div>
             <input type="password" id="password" name="password" required placeholder="Contraseña">
-            <br><br>
+            <div class="forgote-group">
+                <p>Olvidaste tu contraseña<br><a href="#" class="forgotePassword">Recuperala aqui</a>
+                <p>
+            </div>
+            <br>
             <hr>
             <div class="actions">
-                <button type="submit" name="login" value="login">Iniciar Sesión</button>
-                <p> No tienes una cuenta? <a href="./../routers/routerUsers.php?X=3">Registrate</a>
-                </p>
+                <button type="submit" name="login" value="login">Iniciar Sesión</button><br>
+                <p> No tienes una cuenta? <a href="./../routers/routerUsers.php?X=1">Registrate</a></p>
             </div>
         </form>
     </div>
