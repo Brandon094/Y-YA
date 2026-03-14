@@ -39,16 +39,9 @@
             </div>
             <!-- Información adicional del usuario -->
             <div class="infoUserSec">
-                <h3>Información Adicional</h3>
+                <h3>Seguridad de la cuenta</h3>
                 <input name="fechaRegistro" type="hidden" value="<?php echo date('Y-m-d H:i:s'); ?>">
 
-                <!-- rol -->
-                <div class="input-label">
-                    <label for="rol">Rol:</label>
-                </div>
-                <div class="input-label">
-                    <input name="rol" type="text" value="" placeholder="seleccione rol" required>
-                </div>
                 <!-- credenciales -->
                 <div class="input-label">
                     <label for="email">Email:</label>
@@ -61,6 +54,14 @@
                 </div>
                 <div class="input-label">
                     <input name="contraseña" type="password" value="" placeholder="ingrese Contraseña" required>
+                </div>
+
+                <!-- rol -->
+                <div class="input-label">
+                    <label for="rol">Rol:</label>
+                </div>
+                <div class="input-label">
+                    <input name="rol" type="text" value="" placeholder="seleccione rol" required>
                 </div>
 
                 <!-- contactos-->
@@ -87,6 +88,7 @@
             </div>
             <div class="contentButton">
                 <input name="Guardar" type="submit" value="Guardar">
+                <input name="Cancelar" type="submit" value="Cancelar">
             </div>
         </form>
     </div>
