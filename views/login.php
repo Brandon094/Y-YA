@@ -41,7 +41,7 @@
             <br>
             <hr>
             <div class="actions">
-                <button type="submit" name="login" value="login">Iniciar Sesión</button><br>
+                <button type="submit" name="login" value="login">Iniciar Sesión</button><br><hr>
                 <p> No tienes una cuenta? <a href="./../routers/routerUsers.php?X=1">Registrate</a></p>
             </div>
         </form>
