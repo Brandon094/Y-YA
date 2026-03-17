@@ -7,9 +7,19 @@ class AuthController{
      */
     public function login($username, $password){
         $modelLogin = new Auth();
-        $rta = $modelLogin->login($username, $password);
-        if ($rta == "2") {
-            // redirige al home usando la ruta relativa al servidor
+        $user = $modelLogin->login($username, $password);
+
+        if ($user) {
+            // Inicia la sesión y guarda algunos datos del usuario
+            if (session_status() !== PHP_SESSION_ACTIVE) {
+                session_start();
+            }
+            $_SESSION['user'] = [
+                'id' => $user['id'] ?? null,
+                'nombreUsuario' => $user['nombreUsuario'] ?? null,
+                'rol' => $user['rol'] ?? null,
+            ];
+
             header("Location: ./views/home.php");
             exit();
         } else {
