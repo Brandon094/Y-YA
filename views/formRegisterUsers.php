@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="./../public/css/style.css">
+<link rel="stylesheet" href="./../public/css/footer.css">
+<link rel="stylesheet" href="./../public/css/content.css">
 <link rel="stylesheet" href="./../public/css/formRegisterUsers.css">
 
 <div class="content">
@@ -87,9 +89,10 @@
                 </div>
             </div>
             <div class="contentButton">
-                <input name="Guardar" type="submit" value="Guardar">
-                <input name="Cancelar" type="submit" value="Cancelar">
+                <input name="Guardar" type="submit" value="Confirmar registro">
             </div>
         </form>
     </div>
+    <button class="btn-home" type="button" onclick="window.location.href='./../index.php'">Volver al inicio</button>
 </div>
+<?php include __DIR__ . '/footer.php'; ?>
