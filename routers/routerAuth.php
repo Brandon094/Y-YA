@@ -13,7 +13,8 @@
             $auth->logout();
             break;
         default:
-            # code ...
+            header("Location: ./index.php");
+            exit();
             break;
     }
 ?>
