@@ -7,20 +7,19 @@ $x = $_REQUEST['X'] ?? null;
 // Define el contenido según el parámetro X
 switch ($x) {
     case '1':
-        $contenido = "./../views/formRegisterUsers.php";
-        // Incluye la vista principal que contiene el navbar, sidebar y el área de contenido dinámico
-        require_once(__DIR__ . '/../views/home.php');
+        include(__DIR__ . "/../views/formRegisterUsers.php");
         break;
     case '2':
         $contenido = "./../views/formRegisterServices.php";
         require_once(__DIR__ . '/../views/home.php');
         break;
     case '3':
-        $contenido = "./../views/config.php";
-        require_once(__DIR__ . '/../views/home.php');
+        $auth = new AuthController(); // Instancia del controlador de autenticación
+        $auth->logout(); // Llama al método de logout para cerrar la sesión
+        include(__DIR__ . "/../views/logout.php"); // Muestra la vista de logout después de cerrar sesión
         break;
     default:
         $contenido = "./../views/dashboard.php";
-        //require_once(__DIR__ . '/../views/home.php');
+        require_once(__DIR__ . '/../views/home.php');
         break;
 }
