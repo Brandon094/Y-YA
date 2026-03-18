@@ -1,5 +1,5 @@
 <?php 
-include_once(__DIR__ . '/../model/authModel.php');
+include_once(__DIR__ . '/../model/authModel.php'); // Incluye el modelo de autenticación para acceder a la lógica de negocio relacionada con el login/logout
 
 class AuthController{
     /*** Login
